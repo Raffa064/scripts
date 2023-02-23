@@ -19,5 +19,7 @@ else
   else
    echo Incorrect code. action aborted. 
   fi
+ else
+  echo 'invalid option, use "show" or "clear"'
  fi
 fi
