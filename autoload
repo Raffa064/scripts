@@ -6,6 +6,8 @@ for i in $(ls /scripts); do
     alias $i="source /scripts/$i"
 done
 
+backup
+
 echo updatading......
 apt-get upgrade -y && apt-get update -y
 

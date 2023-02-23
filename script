@@ -7,6 +7,8 @@ if [ "$1" == "-l" ]; then
  done
 else
  path="/scripts/$1"
- nano -s sh $path
+ nano -Y sh $path -l
  alias $1="source $path"
 fi
+
+backup
