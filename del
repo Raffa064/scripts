@@ -1,2 +1,3 @@
 echo [safe deleting $1]
-mv $1 /trash
+cp $1 /trash
+rm -rf $1
