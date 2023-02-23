@@ -5,5 +5,18 @@ if [ "$1" = "show" ]; then
  done
 else
  if [ "$1" = "clear" ]; then
-   random = $
+  for i in $(ls /trash); do
+   echo $i
+  done
+  echo You really want to clear trash? 
+  rnd="$RANDOM"
+  echo Type $rnd to delete.
+  read res
+  if [ "$res" = "$rnd"]; then
+   echo Clearing trash...
+   rm -rf /trash
+   mkdir /trash
+  else
+   echo Incorrect code. action aborted. 
+  fi
 fi
