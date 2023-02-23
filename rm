@@ -1,5 +1,0 @@
-echo [safe rm]
-
-mkdir /trash
-mv $1 /trash
-rm 
