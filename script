@@ -1,0 +1,12 @@
+clear
+
+if [ "$1" == "-l" ]; then
+ echo SCRIPTS:
+ for i in $(ls /scripts); do
+  echo $i
+ done
+else
+ path="/scripts/$1"
+ nano -s sh $path
+ alias $1="source $path"
+fi

@@ -1,0 +1,12 @@
+# alias uplogs="cat /.update-logs"
+alias bashrc="nano /etc/bash.bashrc && source /etc/bash.bashrc"
+alias vsc="cat ~/.config/code-server/config.yaml && code-server"
+
+for i in $(ls /scripts); do
+    alias $i="source /scripts/$i"
+done
+
+echo updatading......
+apt-get upgrade -y && apt-get update -y
+
+clear

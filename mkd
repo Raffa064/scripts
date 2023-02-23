@@ -1,0 +1,2 @@
+mkdir $i
+cd $i
