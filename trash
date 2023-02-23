@@ -12,7 +12,7 @@ else
   rnd="$RANDOM"
   echo Type $rnd to delete.
   read res
-  if [ "$res" = "$rnd"]; then
+  if [ "$res" = "$rnd" ]; then
    echo Clearing trash...
    rm -rf /trash
    mkdir /trash
