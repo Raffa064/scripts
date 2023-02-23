@@ -9,6 +9,5 @@ else
  path="/scripts/$1"
  nano -Y sh $path -l
  alias $1="source $path"
+ backup
 fi
-
-backup
