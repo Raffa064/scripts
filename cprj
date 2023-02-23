@@ -1,0 +1,1 @@
+cp $1 /root/projects/$2
