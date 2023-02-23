@@ -1,0 +1,2 @@
+echo [safe deleting $1]
+mv $1 /trash
