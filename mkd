@@ -1,2 +1,2 @@
-mkdir $i
-cd $i
+mkdir $1
+cd $1
