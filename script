@@ -1,5 +1,4 @@
 clear
-
 if [ "$1" == "-l" ]; then
  echo SCRIPTS:
  for i in $(ls /scripts); do
