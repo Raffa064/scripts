@@ -1,1 +1,1 @@
-rm -rf /root/.npm
+rm -rf /root/.npm/_cacache
