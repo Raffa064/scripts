@@ -1,12 +1,17 @@
 clear
-if [ "$1" == "-l" ]; then
+if [ "$1" == "list" ]; then
  echo SCRIPTS:
  for i in $(ls /scripts); do
   echo $i
  done
 else
- path="/scripts/$1"
- nano -Y sh $path -l
- alias $1="source $path"
- backup
+ if [ "$1" == "remove"]; then
+  echo "Deleting $2..."
+  del "/scripts/$2"
+ else
+  path="/scripts/$1"
+  nano -Y sh $path -l
+  alias $1="source $path"
+  backup
+ fi
 fi
