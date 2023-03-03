@@ -9,7 +9,9 @@ else
   echo "Deleting $2..."
   del "/scripts/$2"
  else
-  if [ "$1" == "rename"]; then 
+  if [ "$1" == "rename"]; then
+   echo "Renaming $2 into $3..."
+   mv "/scripts/$2" "/scripts/$3"
    echo feature not working
   else
    path="/scripts/$1"
