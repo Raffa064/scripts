@@ -12,3 +12,7 @@ echo updatading......
 apt-get upgrade -y && apt-get update -y
 
 clear
+
+teste(a) {
+ echo a
+}
