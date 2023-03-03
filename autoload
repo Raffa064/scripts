@@ -8,7 +8,7 @@ done
 
 backup
 
-function red(text) {
+function red(text); {
  echo "red $text red"
 }
 
