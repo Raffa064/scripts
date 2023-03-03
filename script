@@ -5,7 +5,7 @@ if [ "$1" == "list" ]; then
   echo $i
  done
 else
- if [ "$1" == "remove"]; then
+ if [ "$1" == "remove" ]; then
   echo "Deleting $2..."
   del "/scripts/$2"
  else
