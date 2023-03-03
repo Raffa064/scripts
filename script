@@ -10,6 +10,7 @@ else
   del "/scripts/$2"
  else
   if [ "$1" == "rename"]; then 
+   echo feature not working
   else
    path="/scripts/$1"
    nano -Y sh $path -l
