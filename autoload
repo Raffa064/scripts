@@ -8,8 +8,8 @@ done
 
 backup
 
-teste = () {
- echo "foudas"
+function red(text) {
+ echo "red $text red"
 }
 
 echo updatading......
