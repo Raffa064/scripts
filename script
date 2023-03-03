@@ -1,6 +1,6 @@
 clear
 if [ "$1" == "list" ]; then
- echo SCRIPTS:
+ print 36  SCRIPTS:
  for i in $(ls /scripts); do
   echo $i
  done
