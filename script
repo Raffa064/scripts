@@ -2,7 +2,7 @@ clear
 if [ "$1" == "list" ]; then
  print 36  SCRIPTS:
  for i in $(ls /scripts); do
-  print 34 $i
+  print 33 $i
  done
 else
  if [ "$1" == "remove" ]; then
