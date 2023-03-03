@@ -1,0 +1,10 @@
+if [ -e "/scripts/$1" ]; then
+ if [ ! -d "/scripts/$1" ]; then
+  source "/scripts/$1"
+ else
+  echo "[ Invalid script ]"
+  echo "cd /scripts/$1"
+ fi
+else
+ echo "[ Script not exists ]"
+fi
