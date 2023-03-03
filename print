@@ -1,1 +1,5 @@
-echo -e "\e[1;$1m$2\e[0;37m"
+if [ ! "$2" == "" ]; then
+ echo $1
+else
+ echo -e "\e[1;$1m$2\e[0;37m"
+fi
