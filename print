@@ -1,4 +1,0 @@
-function red(text); {
-    return "\033[01;32m$text"
-}
-echo -e $($1)
