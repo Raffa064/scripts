@@ -4,7 +4,7 @@ cd $path
 
 if [ "$2" = "-a" ]; then
   if [ -e "$path/node_modules" ]; then
-   echo auto run dev
+   print 32 "auto run dev"
    npm run dev
   fi
 fi
