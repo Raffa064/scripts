@@ -3,7 +3,7 @@ alias bashrc="nano /etc/bash.bashrc && source /etc/bash.bashrc"
 alias vsc="cat ~/.config/code-server/config.yaml && code-server"
 
 for i in $(ls /scripts); do
- if [ ! -d "/scripts/$i" ]; do
+ if [ ! -d "/scripts/$i" ]; then
   print 33 "Adding alias to $i"
   alias $i="source /scripts/runscript $i"
   alias ".$i"="script $i"
