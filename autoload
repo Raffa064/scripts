@@ -4,7 +4,7 @@ alias vsc="cat ~/.config/code-server/config.yaml && code-server"
 
 for i in $(ls /scripts); do
  if [ ! -d "/scripts/$i" ]; then
-  print 33 $("[ Adding alias: $i ]")
+  print 33 "[ Adding alias: $i ]"
   alias $i="source /scripts/runscript $i"
   alias ".$i"="script $i"
   sleep 1
