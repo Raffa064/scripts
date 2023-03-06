@@ -4,13 +4,10 @@ alias vsc="cat ~/.config/code-server/config.yaml && code-server"
 
 for i in $(ls /scripts); do
     alias $i="source /scripts/runscript $i"
+    alias ".$i"="script $i"
 done
 
 backup
-
-function red(text); {
- echo "red $text red"
-}
 
 echo updatading......
 apt-get upgrade -y && apt-get update -y
