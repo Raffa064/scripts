@@ -1,3 +1,4 @@
+echo $1 : $2 : $3 : $4 : $5
 path="/root/projects/$1"
 
 cd $path
