@@ -1,6 +1,6 @@
 if [ "$1" == "remove" ]; then
  if [ -e "/scripts/.dir/:$2" ]; then 
-  unalias $2
+  unalias :$2
   del /scripts/.dir/:$2
  else
   print 31 "[ Not found ]"
