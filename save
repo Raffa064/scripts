@@ -1,0 +1,5 @@
+print 33 "Enter the name for this directory:"
+read dirname
+touch /scripts/.dir/$dirname
+echo $pwd >> /scripts/.dir/$dirname
+load-dir-names
