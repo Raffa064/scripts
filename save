@@ -1,5 +1,5 @@
 dirname=${@}
-if [ dirname == ""]; then
+if [ "$#" -eq 0]; then
  print 33 "Enter the name for this directory:"
  read dirname
 fi
