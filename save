@@ -7,7 +7,10 @@ if [ "$1" == "remove" ]; then
  fi
 else
  if [ "$1" == "override" ]; then 
-  echo rewrite
+  print 36 "[ Overriding $(cat /scripts/.dir/$2) to $(pwd) ]"
+  rm -rf /scripts/.dir/$2
+  touch /scripts/.dir/$2
+  echo $(pwd) >> /scripts/.dir/$2 
  else
   dirname=${@}
   if [ "$#" -eq 0 ]; then
