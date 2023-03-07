@@ -1,12 +1,16 @@
-if [ "$1" = "show" ]; then
+function printTrashContent {
  print 33 "[ Trash content ]"
  for i in $(ls /trash); do
   if [ -d /trash/$i ]; then
-   print 32 $i
+   print 32 📂 $i
   else
-   print 34 $i
+   print 34 📄 $i
   fi
  done
+}
+
+if [ "$1" = "show" ]; then
+ printTrashContent
 else
  if [ "$1" = "clear" ]; then
   for i in $(ls /trash); do
