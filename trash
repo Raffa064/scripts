@@ -9,21 +9,23 @@ if [ "$1" = "show" ]; then
  done
 else
  if [ "$1" = "clear" ]; then
-  for i in $(ls /trash); do
-   echo $i
-  done
-  echo You really want to clear trash? 
+  if [ -d /trash/$i ]; then
+   print 32 $i
+  else
+   print 34 $i
+  fi
+  print 31 You really want to clear trash? 
   rnd="$RANDOM"
-  echo Type $rnd to delete.
+  print 35 Type $rnd to delete.
   read res
   if [ "$res" = "$rnd" ]; then
-   echo Clearing trash...
+   print 31 "[ Clearing trash... ]"
    rm -rf /trash
    mkdir /trash
   else
-   echo Incorrect code. action aborted. 
+   print 33 Incorrect code. action aborted. 
   fi
  else
-  echo 'invalid option, use "show" or "clear"'
+  print 32 'invalid option, use "show" or "clear"'
  fi
 fi
