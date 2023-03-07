@@ -24,8 +24,7 @@ else
     print 33 "Enter the name for this directory:"
     read dirname
    fi
-  fi
- fi
+#fi fi
 
  if [ ! -e "/scripts/.dir/:$dirname" ] && [ ! "$dirname" == "" ]; then
   touch /scripts/.dir/:$dirname
@@ -39,4 +38,6 @@ else
    print 35 "You can use 'checkpoint override $1'"
   fi
  fi
+fi
+fi
 fi
