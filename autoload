@@ -9,6 +9,7 @@ for i in $(ls /scripts); do
  fi
 done
 
+mkdir /scripts/.dir
 load-dir-names
 
 backup
