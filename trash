@@ -1,7 +1,11 @@
 if [ "$1" = "show" ]; then
- echo Trash content:
+ print 33 "[ Trash content ]"
  for i in $(ls /trash); do
-  echo $i
+  if [ -d /trash/$i ]; then
+   print 32 $i
+  else
+   print 34 $i
+  fi
  done
 else
  if [ "$1" = "clear" ]; then
