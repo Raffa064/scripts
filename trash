@@ -21,7 +21,7 @@ else
   print 35 Type $rnd to delete.
   read res
   if [ "$res" = "$rnd" ]; then
-   print 31 "[ Clearing trash... ]"
+   print 36 "[ Clearing trash... ]"
    rm -rf /trash
    mkdir /trash
   else
