@@ -1,16 +1,16 @@
 if [ "$1" == "remove" ]; then
  if [ -e "/scripts/.dir/$2" ]; then 
   unalias $2
-  del /scripts/.dir/$2
+  del /scripts/.dir/:$2
  else
   print 31 "[ Not found ]"
  fi
 else
  if [ "$1" == "override" ]; then 
   print 36 "[ Overriding $(cat /scripts/.dir/$2) to $(pwd) ]"
-  rm -rf /scripts/.dir/$2
-  touch /scripts/.dir/$2
-  echo $(pwd) >> /scripts/.dir/$2 
+  rm -rf /scripts/.dir/:$2
+  touch /scripts/.dir/:$2
+  echo $(pwd) >> /scripts/.dir/:$2 
  else
   if [ "$1" == "list" ]; then
     print 32 "[ Checkpoint list ]"
@@ -27,7 +27,7 @@ else
   fi
  fi
 
- touch /scripts/.dir/$dirname
- echo $(pwd) >> /scripts/.dir/$dirname
+ touch /scripts/.dir/:$dirname
+ echo $(pwd) >> /scripts/.dir/:$dirname
  load-checkpoints
 fi
