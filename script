@@ -1,9 +1,14 @@
 clear
-if [ "$1" == "list" ]; then
+
+function printScripts() {
  print 32  SCRIPTS:
  for i in $(ls /scripts); do
   print 33 $i
  done
+}
+
+if [ "$1" == "list" ]; then
+ printScripts()
 else
  if [ "$1" == "remove" ]; then
   print 31 "Deleting $2..."
