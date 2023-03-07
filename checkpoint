@@ -24,20 +24,19 @@ else
     print 33 "Enter the name for this directory:"
     read dirname
    fi
-#fi fi
 
- if [ ! -e "/scripts/.dir/:$dirname" ] && [ ! "$dirname" == "" ]; then
-  touch /scripts/.dir/:$dirname
-  echo $(pwd) >> /scripts/.dir/:$dirname
-  load-checkpoints
- else
-  if [ "$dirname" == "" ]; then
-   print 33 "[ Invalid checkpoint name ]"
-  else
-   print 33 "[ Checkpoint already exists ]"
-   print 35 "You can use 'checkpoint override $1'"
+   if [ ! -e "/scripts/.dir/:$dirname" ] && [ ! "$dirname" == "" ]; then
+    touch /scripts/.dir/:$dirname
+    echo $(pwd) >> /scripts/.dir/:$dirname
+    load-checkpoints
+   else
+    if [ "$dirname" == "" ]; then
+     print 33 "[ Invalid checkpoint name ]"
+    else
+     print 33 "[ Checkpoint already exists ]"
+     print 35 "You can use 'checkpoint override $1'"
+    fi
+   fi
   fi
  fi
-fi
-fi
 fi
