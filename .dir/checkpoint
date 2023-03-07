@@ -29,4 +29,55 @@ updatading......
 [1;34r[31;1H(B[0;7m31(B[m  (B[0;1m[34mecho[39m(B[m [32m$([39m(B[mpwd[32m)[39m(B[m [32m>>[39m(B[m /scripts/.dir/[32m:(B[0;1m[31m$dirname[31;15H[39m(B[m[?25l[?12l[?25h7[2;32r8[32d
 [1;34r[31;1H(B[0;7m32(B[m  load-checkpoints[15G[?25l[?12l[?25h7[2;32r8[32d
 [1;34r[31;1H(B[0;7m33(B[m [32mfi[39m(B[m[?25l[?12l[?25h7[2;32r8[32d
-[1;34r[31;1H(B[0;7m34[C(B[m[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[32d(B[0;7mSave modified buffer?                                             [33;1H Y(B[m Yes[K[34d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[32;23H[?12l[?25h[?25l[33d(B[0;7m^G(B[m Help[33;17H(B[0;7mM-D(B[m DOS Format  (B[0;7mM-A(B[m Append[49G(B[0;7mM-B(B[m Backup File[34d(B[0;7m^C(B[m Cancel[17G(B[0;7mM-M(B[m Mac Format  (B[0;7mM-P(B[m Prepend     (B[0;7m^T(B[m Browse[32d(B[0;7mFile Name to Write: /scripts/checkpoint(B[m[?12l[?25h[?25l[32;26H[1K (B[0;7m[ Writing... ](B[m[K[1;57H(B[0;7m        (B[m[32;25H(B[0;7m[ Wrote 33 lines ](B[m[J[34d[?12l[?25h[34;1H[?1049l[23;0;0t[?1l>[?2004lOld path: /scri
+[1;34r[31;1H(B[0;7m34[C(B[m[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[32d(B[0;7mSave modified buffer?                                             [33;1H Y(B[m Yes[K[34d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[32;23H[?12l[?25h[?25l[33d(B[0;7m^G(B[m Help[33;17H(B[0;7mM-D(B[m DOS Format  (B[0;7mM-A(B[m Append[49G(B[0;7mM-B(B[m Backup File[34d(B[0;7m^C(B[m Cancel[17G(B[0;7mM-M(B[m Mac Format  (B[0;7mM-P(B[m Prepend     (B[0;7m^T(B[m Browse[32d(B[0;7mFile Name to Write: /scripts/checkpoint(B[m[?12l[?25h[?25l[32;26H[1K (B[0;7m[ Writing... ](B[m[K[1;57H(B[0;7m        (B[m[32;25H(B[0;7m[ Wrote 33 lines ](B[m[J[34d[?12l[?25h[34;1H[?1049l[23;0;0t[?1l>[?2004lOld path: /scripts/.dir
+[main 4da9cdc] Auto commited by script
+ 2 files changed, 33 insertions(+), 1 deletion(-)
+fatal: unable to access 'https://github.com/Raffa064/scripts.git/': Could not resolve host: github.com
+[?2004hroot@localhost:/scripts/.dir# script checkpoint[K[K[K[K[K[K[K[K[K[Kload-checkpoints
+[?2004l[H[2J[3J[?2004h[?1049h[22;0;0t[1;34r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[32;27H(B[0;7m[ Reading... ](B[m[32;26H(B[0;7m[ Read 3 lines ](B[m[H(B[0;7m  GNU nano 6.0        /scripts/load-checkpoints                   [1;65H(B[m[33d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut[53G(B[0;7m^T(B[m Execute[34d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify[2d(B[0;7m 1(B[m [32mfor[39m(B[m i [32min[39m(B[m [32m$([39m(B[mls /scripts/.dir/[32m);[39m(B[m [32mdo[3d[39m(B[0;7m 2(B[m  alias (B[0;1m[31m$i(B[0m[32m=(B[0;1m[33m"cd $(cat /scripts/.dir/$i)"[4d[39m(B[0;7m 3(B[m [32mdone[5d[39m(B[0;7m 4[2;4H(B[m[?12l[?25h[?25l[32d[J[34d[?12l[?25h[34;1H[?1049l[23;0;0t[?1l>[?2004lOld path: /scripts/.dir
+On branch main
+Your branch is ahead of 'origin/main' by 9 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+fatal: unable to access 'https://github.com/Raffa064/scripts.git/': Could not resolve host: github.com
+[?2004hroot@localhost:/scripts/.dir# ls
+[?2004l:teste	checkpoint
+[?2004hroot@localhost:/scripts/.dir# lsscript load-checkpointsls[K[Kalias
+[?2004lalias .autoload='script autoload'
+alias .backup='script backup'
+alias .build='script build'
+alias .checkpoint='script checkpoint'
+alias .cprj='script cprj'
+alias .del='script del'
+alias .load-checkpoints='script load-checkpoints'
+alias .mkd='script mkd'
+alias .npm-clear='script npm-clear'
+alias .print='script print'
+alias .prj='script prj'
+alias .reload='script reload'
+alias .runscript='script runscript'
+alias .script='script script'
+alias .trash='script trash'
+alias :teste='cd /scripts/.dir
+/scripts/.dir'
+alias autoload='source /scripts/runscript autoload'
+alias backup='source /scripts/runscript backup'
+alias bashrc='nano /etc/bash.bashrc && source /etc/bash.bashrc'
+alias build='source /scripts/runscript build'
+alias check='checkpoint'
+alias checkpoint='source /scripts/checkpoint'
+alias cprj='source /scripts/runscript cprj'
+alias del='source /scripts/runscript del'
+alias load-checkpoints='source /scripts/load-checkpoints'
+alias mkd='source /scripts/runscript mkd'
+alias npm-clear='source /scripts/runscript npm-clear'
+alias print='source /scripts/runscript print'
+alias prj='source /scripts/runscript prj'
+alias reload='source /scripts/runscript reload'
+alias runscript='source /scripts/runscript runscript'
+alias script='source /scripts/runscript script'
+alias trash='source /scripts/runscript trash'
+alias vsc='cat ~/.config/code-server/config.yaml && code-server'
+[?2004hroot@localhost:/scripts/.dir# [Kroot@localhost:/scripts/.dir# [Kroot@localhost:/scripts/.dir# script trash
+[?2004l[H[2J[3J[?2004h[?1049h[22;0;0t[1;34r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[32;27H(B[0;7m[ Reading... ](B[m[32;25H(B[0;7m[ Read 25 lines ](B[m[H(B[0;7m  GNU nano 6.0              /scripts/trash                        [1;65H(B[m[33d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut[53G(B[0;7m^T(B[m Execute[34d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify[2d(B[0;7m 1(B[m [32mif[39m(B[m [32m[[39m(B[m (B[0;1m[33m"$1"[39m(B[m [32m=[39m(B[m (B[0;1m[33m"show"[39m(B[m [32m];[39m(B[m [32mthen[3d[39m(B[0;7m 2(B[m  (B[0;1m[34mecho[39m(B[m Trash content[32m:
