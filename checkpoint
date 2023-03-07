@@ -15,7 +15,7 @@ else
   if [ "$1" == "list" ]; then
     print 32 "[ Checkpoint list ]"
    for i in $(ls /scripts/.dir/); do
-    print 33 "• $i"
+    print 33 "📌 $i"
     print 34 "----> $(cat /scripts/.dir/$i)"
    done
   else
