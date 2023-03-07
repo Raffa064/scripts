@@ -27,12 +27,16 @@ else
   fi
  fi
 
- if [ ! -e "/scripts/.dir/:$dirname" ]; then
+ if [ ! -e "/scripts/.dir/:$dirname"  && ! "$dirname" == ""]; then
   touch /scripts/.dir/:$dirname
   echo $(pwd) >> /scripts/.dir/:$dirname
   load-checkpoints
  else
-  print 33 "[ Checkpoint already exists ]"
-  print 35 "You can use 'checkpoint override $1'"
+  if [ "$dirname" == "" ]; then
+   print 33 "[ Invalid checkpoint name ]"
+  else
+   print 33 "[ Checkpoint already exists ]"
+   print 35 "You can use 'checkpoint override $1'"
+  fi
  fi
 fi
