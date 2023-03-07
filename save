@@ -1,9 +1,18 @@
-dirname=${@}
-if [ "$#" -eq 0 ]; then
- print 33 "Enter the name for this directory:"
- read dirname
-fi
+if [ "$1" == "remove" ]; then
+ if [ -e "/scripts/.dir/$2" ]; then 
+  unalias $2
+  del /scripts/.dir/$2
+ else
+  print 31 "[ Not found ]"
+ fi
+else
+ dirname=${@}
+ if [ "$#" -eq 0 ]; then
+  print 33 "Enter the name for this directory:"
+  read dirname
+ fi
 
-touch /scripts/.dir/$dirname
-echo $(pwd) >> /scripts/.dir/$dirname
-load-dir-names
+ touch /scripts/.dir/$dirname
+ echo $(pwd) >> /scripts/.dir/$dirname
+ load-dir-names
+fi
