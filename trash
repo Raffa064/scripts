@@ -13,13 +13,7 @@ if [ "$1" = "show" ]; then
  printTrashContent
 else
  if [ "$1" = "clear" ]; then
-  for i in $(ls /trash); do
-   if [ -d /trash/$i ]; then
-    print 32 $i
-   else
-    print 34 $i
-   fi
-  done
+  printTrashContent
   print 31 You really want to clear trash? 
   rnd="$RANDOM"
   print 35 Type $rnd to delete.
