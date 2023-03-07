@@ -11,7 +11,7 @@ if [ "$1" == "list" ]; then
  printScripts
 else
  if [ "$1" == "remove" ]; then
-  print 31 "Deleting $2..."
+  print 31 "[ Moving $2 to trash... ]"
   del "/scripts/$2"
  else
   if [ "$1" == "rename" ]; then
