@@ -6,10 +6,14 @@ if [ "$1" == "remove" ]; then
   print 31 "[ Not found ]"
  fi
 else
- dirname=${@}
- if [ "$#" -eq 0 ]; then
-  print 33 "Enter the name for this directory:"
-  read dirname
+ if [ "$1" == "override" ]; then 
+  echo rewrite
+ else
+  dirname=${@}
+  if [ "$#" -eq 0 ]; then
+    print 33 "Enter the name for this directory:"
+    read dirname
+  fi
  fi
 
  touch /scripts/.dir/$dirname
