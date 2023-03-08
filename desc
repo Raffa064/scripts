@@ -24,7 +24,7 @@ fi
 
 if [ "$1" == "-d" ]; then
  if [ -e "/scripts/.desc/$2" ]; then
-  echo $(cat /script/.desc/$2)
+  echo $(cat /scripts/.desc/$2)
  else
   echo "[ No description file ]"
  fi
