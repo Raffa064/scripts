@@ -10,3 +10,12 @@ if [ "$1" == "setup" ]; then
   fi
  done
 fi
+
+if [ "$1" == "change" ]; then
+ if [ -e "/scripts/$2" ]; then
+  desc setup
+  nano /scripts/.desc/$2
+ else
+  print 31 "[ Invalid script ]"
+ fi
+fi
