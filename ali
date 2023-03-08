@@ -1,0 +1,18 @@
+if [ ! -e "/scripts/.ali" ]; then
+ mkdir /scripts/.ali
+fi
+
+if [ "$1" == "save" ]; then
+ if [ ! -e "/scripts/.ali/alias" ]; then
+  touch /scripts/.ali/alias
+  else
+   del /scripts/.ali/alias
+ fi
+
+ echo $(alias) >> /scripts/.ali/alias
+ print 32 "[ Alias saved! ]"
+fi
+
+if [ "$1" == "load" ]; then
+ 
+fi
