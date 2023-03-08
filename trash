@@ -9,7 +9,7 @@ function printTrashContent {
  done
 }
 
-if [ "$1" = "show" ]; then
+if [ "$1" = "list" ]; then
  printTrashContent
 else
  if [ "$1" = "clear" ]; then
@@ -26,6 +26,6 @@ else
    print 33 Incorrect code. action aborted. 
   fi
  else
-  print 32 'invalid option, use "show" or "clear"'
+  print 32 'Invalid option, use "list" or "clear"'
  fi
 fi
