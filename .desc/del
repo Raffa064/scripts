@@ -1,1 +1,2 @@
-[ No deacription ]
+Safe alternative for "rm -rf".
+This script only moves the file to /trash, and you can see and clear its content with trash script
