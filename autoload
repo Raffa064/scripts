@@ -12,6 +12,7 @@ done
 
 mkdir /scripts/.dir
 load-checkpoints
+desc setup
 
 backup
 
