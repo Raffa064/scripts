@@ -1,0 +1,12 @@
+mkdir /scripts/.desc
+
+if [ "$1" == "setup" ]; then
+ for i in $(ls /scripts); do
+  scriptPath="/scripts/$i"
+  descPath="/scripts/.desc/$i"
+  if [ ! -e $descPath ]; then
+   touch $descPath
+   echo "[ No deacription ]" >> $descPath
+  fi
+ done
+fi
