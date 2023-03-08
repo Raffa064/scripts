@@ -1,14 +1,13 @@
 clear
 
-function printScripts {
- print 32  SCRIPTS:
+if [ "$1" == "list" ]; then
+ print 32  "[ SCRIPTS ]"
  for i in $(ls /scripts); do
   print 33 $i
- done;
-}
-
-if [ "$1" == "list" ]; then
- printScripts
+  if [ "$2" == "-d" ]; then
+   print 34 "$(desc -d $i)"
+  fi
+ done
 else
  if [ "$1" == "remove" ]; then
   print 31 "[ Moving $2 to trash... ]"
