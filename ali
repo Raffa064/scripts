@@ -14,5 +14,9 @@ if [ "$1" == "save" ]; then
 fi
 
 if [ "$1" == "load" ]; then
- 
+ if [ ! -e "/scripts/.ali/alias" ]; then
+  print 31 "[ No saved alias ]"
+ else
+  print 33 "You really want to load the saved alias?" 
+ fi
 fi
