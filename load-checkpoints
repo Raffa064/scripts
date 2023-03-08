@@ -1,3 +1,7 @@
+if [ ! -e "/scripts/.dir" ]; then
+ mkdir /scripts/.dir
+fi
+
 for i in $(ls /scripts/.dir/); do
  alias $i="cd $(cat /scripts/.dir/$i)"
 done
