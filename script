@@ -22,7 +22,7 @@ else
   else
    path="/scripts/$1"
    nano -Y sh $path -l
-   alias $1="source $path"
+   reload
    backup
   fi
  fi
