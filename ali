@@ -17,6 +17,13 @@ if [ "$1" == "load" ]; then
  if [ ! -e "/scripts/.ali/alias" ]; then
   print 31 "[ No saved alias ]"
  else
-  print 33 "You really want to load the saved alias?" 
+  print 36 "You really want to load the saved alias? (Y/any)"
+  read op
+  if [ "$op" == "Y" ]; then
+   bash /scripts/.ali/alias
+   print 33 "[ Loaded saved alias ]"
+  else
+   print 33 "[ Operation canceled ]"
+  fi 
  fi
 fi
