@@ -9,7 +9,7 @@ if [ "$1" == "save" ]; then
    del /scripts/.ali/alias
  fi
 
- echo $(alias -p) >> /scripts/.ali/alias
+ echo -n $(alias) >> /scripts/.ali/alias
  print 32 "[ Alias saved! ]"
 fi
 
