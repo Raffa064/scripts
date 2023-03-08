@@ -21,8 +21,15 @@ else
   else
    path="/scripts/$1"
    nano -Y sh $path -l
-   reload
+   if [ ! -e "/scripts/.desc/$1" ];
+    print 36 "You need to describe this script? (Y/any)"
+    read op
+    if [ "$op" == "Y"]; then
+     desc change $1
+    fi
+   fi
    backup
+   reload
   fi
  fi
 fi
