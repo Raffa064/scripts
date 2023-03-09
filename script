@@ -21,7 +21,7 @@ else
   else
    path="/scripts/$1"
    nano -Y sh $path -l
-   if [ ! -e "/scripts/.desc/$1" ]; then
+   if [ ! -e "/scripts/.desc/$1" ] && [ -e "/scripts/$1" ]; then
     print 36 "You need to describe this script? (Y/any)"
     read op
     if [ "$op" == "Y" ]; then
