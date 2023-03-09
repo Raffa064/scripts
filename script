@@ -19,9 +19,14 @@ else
    alias $2="source /scripts/runscript $3"
    alias $3="source /scripts/runscript $3"
   else
-   path="/scripts/$1"
-   nano -Y sh $path -l
-   if [ ! -e "/scripts/.desc/$1" ] && [ -e "/scripts/$1" ]; then
+   if [ "$2" == "-js" ]; then
+    path="/scripts/.js/$1"
+    nano -Y js $path -l
+   else
+    path="/scripts/$1"
+    nano -Y sh $path -l
+   fi
+   if [ ! -e "/scripts/.desc/$1" ] && [ -e "/scripts/$1" ] && [ -e "/scripts/.js/$1" ]; then
     print 36 "You need to describe this script? (Y/any)"
     read op
     if [ "$op" == "Y" ]; then
