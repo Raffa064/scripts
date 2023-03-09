@@ -24,15 +24,18 @@ else
      path="$path.js"
     fi
     nano -Y sh $path -l
-   if [ ! -e "/scripts/.desc/$1" ] && [ -e "/scripts/$1" ]; then
-    print 36 "You need to describe this script? (Y/any)"
-    read op
-    if [ "$op" == "Y" ]; then
-     desc change $1
+   if  [ -e "/scripts/$1" ]; then
+    if [ ! -e "/scripts/.desc/$1" ]; then
+     print 36 "You need to describe this script? (Y/any)"
+     read op
+     if [ "$op" == "Y" ]; then
+      desc change $1
+     fi
     fi
+
+    backup
+    reload
    fi
-   backup
-   reload
   fi
  fi
 fi
