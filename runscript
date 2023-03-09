@@ -1,6 +1,6 @@
 if [ -e "/scripts/$1" ]; then
  if [ ! -d "/scripts/$1" ]; then
-  if [ $1 =~ \.js$ ]; then
+  if [[ $1 =~ \.js$ ]]; then
    node "/script/$1"  $2 $3 $4 $5 $6 $7 $8 $9
   else
    source "/scripts/$1" $2 $3 $4 $5 $6 $7 $8 $9
