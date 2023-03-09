@@ -3,7 +3,11 @@ clear
 if [ "$1" == "list" ]; then
  print 32  "[ SCRIPTS ]"
  for i in $(ls /scripts); do
-  print 33 $i
+  icon="📘"
+  if [[ $i =~ \.js$ ]] then
+   icon="📒"
+  fi
+  print 33 "$icon $i"
   if [ "$2" == "-d" ]; then
    print 34 "$(desc -d $i)"
   fi
