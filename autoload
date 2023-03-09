@@ -3,6 +3,13 @@ alias bashrc="nano /etc/bash.bashrc && source /etc/bash.bashrc"
 alias vsc="cat ~/.config/code-server/config.yaml && code-server"
 alias check="checkpoint"
 
+for i in $(ls /scripts/.js); do
+ if [ ! -d "/scripts/.js/$i" ]; then
+  alias $i="source /scripts/.js/runscript -js $i"
+  alias ".$i"="script $i -js"
+ fi
+done
+
 for i in $(ls /scripts); do
  if [ ! -d "/scripts/$i" ]; then
   alias $i="source /scripts/runscript $i"
