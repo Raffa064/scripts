@@ -6,9 +6,9 @@ if [ -e "/scripts/$1" ]; then
    source "/scripts/$1" $2 $3 $4 $5 $6 $7 $8 $9
   fi
  else
-  echo "[ Invalid script ]"
-  echo "cd /scripts/$1"
+  print 31 "[ Invalid script ]"
+  print 33 "cd /scripts/$1"
  fi
 else
- echo "[ Script not exists ]"
+ print 31 "[ Script not exists ]"
 fi
