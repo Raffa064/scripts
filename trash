@@ -11,21 +11,29 @@ function printTrashContent {
 
 if [ "$1" = "list" ]; then
  printTrashContent
-else
- if [ "$1" = "clear" ]; then
-  printTrashContent
-  print 31 You really want to clear trash? 
-  rnd="$RANDOM"
-  print 35 Type $rnd to delete.
-  read res
-  if [ "$res" = "$rnd" ]; then
-   print 36 "[ Clearing trash... ]"
-   rm -rf /trash
-   mkdir /trash
-  else
-   print 33 Incorrect code. action aborted. 
-  fi
+fi
+
+if [ "$1" = "clear" ]; then
+ printTrashContent
+ print 31 You really want to clear trash? 
+ rnd="$RANDOM"
+ print 35 Type $rnd to delete.
+ read res
+ if [ "$res" = "$rnd" ]; then
+  print 36 "[ Clearing trash... ]"
+  rm -rf /trash
+  mkdir /trash
  else
-  print 32 'Invalid option, use "list" or "clear"'
+  print 33 Incorrect code. action aborted. 
  fi
+else
+ print 32 'Invalid option, use "list" or "clear"'
+fi
+
+if [ "$1" == "nav" ]; then
+ while :; do
+  clear
+  printTrashContent
+  
+ done
 fi
