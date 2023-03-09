@@ -34,6 +34,7 @@ if [ "$1" == "nav" ]; then
  while :; do
   clear
   printTrashContent
-  
+  read command
+  $(trash $command)
  done
 fi
