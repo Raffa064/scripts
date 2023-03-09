@@ -4,7 +4,7 @@ if [ "$1" == "list" ]; then
  print 32  "[ SCRIPTS ]"
  for i in $(ls /scripts); do
   icon="📘"
-  if [[ $i =~ \.js$ ]] then
+  if [[ $i =~ \.js$ ]]; then
    icon="📒"
   fi
   print 33 "$icon $i"
