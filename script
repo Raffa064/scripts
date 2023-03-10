@@ -19,7 +19,7 @@ else
    path="$path.js"
   fi
   print 31 "[ Moving $2 to trash... ]"
-  del "/scripts/$2"
+  del "$path"
  else
   if [ "$1" == "rename" ]; then
    print 34 "Renaming $2 into $3..."
