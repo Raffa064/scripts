@@ -1,1 +1,1 @@
-console.log("Testeeee")
+console.log(process.stdin)
