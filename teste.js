@@ -1,1 +1,1 @@
-console.log(process.stdin)
+console.log(process.env)
