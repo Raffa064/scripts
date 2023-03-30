@@ -1,7 +1,8 @@
-if [ '$#' == 0 ]; then
+if [ '$#' -q 0 ]; then
   nano /notes.txt
 else
  if [ '$1' == 'show' ]; then
+  print 36 '[ Displaying /notes.txt content ]'
   echo $(cat /notes.txt)
  fi
 fi
