@@ -2,6 +2,9 @@
 alias bashrc="nano /etc/bash.bashrc && source /etc/bash.bashrc"
 alias vsc="cat ~/.config/code-server/config.yaml && code-server"
 alias check="checkpoint"
+alias notes="cat /notes.txt"
+alias .notes"nano /notes.txt"
+echo $(cat /notes.txt)
 
 for i in $(ls /scripts); do
  if [ ! -d "/scripts/$i" ]; then
@@ -19,5 +22,3 @@ echo updatading......
 apt-get upgrade -y && apt-get update -y
 
 clear
-
-echo $(cat /notes.txt)
