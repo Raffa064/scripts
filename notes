@@ -1,0 +1,7 @@
+if [ '$#' == 0 ]; then
+  nano /notes.txt
+else
+ if [ '$1' == 'show']; then
+  echo $(cat /notes.txt)
+ fi
+fi
