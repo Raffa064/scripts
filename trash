@@ -29,12 +29,4 @@ if [ "$1" = "clear" ]; then
 else
  print 32 'Invalid option, use "list" or "clear"'
 fi
-
-if [ "$1" == "nav" ]; then
- while :; do
-  clear
-  printTrashContent
-  read command
-  $(trash $command)
- done
 fi
