@@ -1,3 +1,4 @@
+echo notes
 if [ "$#" -eq 0 ]; then
   nano /notes.txt
 else
