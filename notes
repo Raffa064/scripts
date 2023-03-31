@@ -1,5 +1,5 @@
 print 32 "$1, $2, $3"
-if [ '$1' == 'show' ]; then
+if [ "$1" == "show" ]; then
  print 36 '[ Displaying /notes.txt content ]'
  echo $(cat /notes.txt)
 fi
