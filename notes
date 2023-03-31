@@ -1,5 +1,5 @@
 if [ "$1" == "show" ]; then
- print 36 '[ Displaying /notes.txt content ]'
+ print 36 '[ Notes ]'
  if [ -e "/notes.txt" ]; then
   echo $(cat /notes.txt)
  else
