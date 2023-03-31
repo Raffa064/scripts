@@ -1,0 +1,6 @@
+if [ -e "/etc/.scripts-setup" ]; then
+ print 32 "[ Already setupped ]"
+else
+ echo "source /scripts/autoload" >> "/etc/bash.bashrc"
+ touch "/etc/.scripts-setup"
+fi
