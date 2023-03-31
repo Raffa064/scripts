@@ -1,7 +1,7 @@
 if [ "$1" == "show" ]; then
- print 36 '[ Notes ]'
+ print 32 '[ Notes ]'
  if [ -e "/notes.txt" ]; then
-  echo $(cat /notes.txt)
+  print 33 $(cat /notes.txt)
  else
   print 34 "[ notes.txt not found ]"
  fi
