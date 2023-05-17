@@ -1,0 +1,3 @@
+echo "Hello world"
+echo press enter...
+read
