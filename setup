@@ -3,4 +3,5 @@ if [ -e "/etc/.scripts-setup" ]; then
 else
  echo "source /scripts/autoload" >> "/etc/bash.bashrc"
  touch "/etc/.scripts-setup"
+ source /etc/bash.bashrc
 fi
