@@ -4,16 +4,10 @@ echo "Old path: $oldPath"
 cd /scripts
 
 if [ -e "/scripts/.git" ]; then 
- git add .
- git commit -am "Auto commited by script"
- git push origin main
+ (git add . && git commit -am "Auto commited by script" && git push origin main) &
  cd $oldPath
 else
- git init
- git add .
- git commit -am "Auto commited by script"
-
- echo "Git repo created, configure the remote, and run the following command:"
- echo "backup"
+ (git init && git add . && git commit -am "Auto commited by script") &
+ echo "Git repo created, configure the remote, and run the following command:" && echo "backup"
 fi
 
