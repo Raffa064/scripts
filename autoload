@@ -20,3 +20,7 @@ apt-get upgrade -y && apt-get update -y
 
 clear
 notes show
+
+mkdir "/scripts/vscode/"
+touch "/scripts/vscode/extensions.txt"
+echo "$(code-server --list-extensions)" >> "/scripts/vscode/extensions.txt"
